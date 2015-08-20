@@ -1,0 +1,76 @@
+body {background-color: #474d7b;}
+
+header {height: 50px}
+
+div#bContainer {
+}
+
+div#navRow {
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+div#pFilters {
+    /* width: 300px; */
+    /* position: relative; */
+    margin-right: 5px;
+    height: 700px;
+    }
+
+button#updateFilter {
+    color: black;
+    background-color: lightgreen;
+    }
+            
+a#hfooter {color: yellow;}
+        
+        
+div#pTEvents {
+    /* width: 300px; */
+    height: 700px;
+    margin-left: 5px;
+    }
+
+.table-fixed thead {
+  width: 97%;
+}
+.table-fixed tbody {
+  height: 230px;
+  overflow-y: auto;
+  width: 100%;
+}
+.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+  display: block;
+}
+.table-fixed tbody td, .table-fixed thead > tr> th {
+  float: left;
+  border-bottom-width: 0;
+}
+}
+
+div#footerRow {
+    height:50px;
+    margin-top: 10px;
+    border-top:solid 1px #666;
+    bottom:0;
+    left: 0;
+    padding:5px;
+    position:fixed;
+    width:100%;
+    background-color: black;
+    z-index: 1000;
+}
+
+div#footCols {
+    height:50px;
+    margin-top: 10px;
+    border-top:solid 1px #666;
+    bottom:0;
+    left: 0;
+    padding:5px;
+    position:fixed;
+    width:100%;
+    background-color: black;
+    z-index: 1000;
+}

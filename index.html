@@ -1,129 +1,115 @@
 <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-      <meta charset="utf-8">
+    <html lang="en">
+        <head>
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+            <meta charset="utf-8">
+            <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+              <meta http-equiv="Pragma" content="no-cache" />
+      <meta http-equiv="Expires" content="0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
       <title>Bootstrap Preview</title>
 
-      <link href="./bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
-      <link href="./bootstrap-3.3.5/css/bootstrap-theme.min.css" rel="stylesheet">
-      <link href="./bootstrap-3.3.5/css/simple-sidebar.css" rel="stylesheet">
+      <link href="./bootstrap-3.3.5/css/bootstrap.css" rel="stylesheet">
+      <link href="./bootstrap-3.3.5/css/bootstrap-theme.css" rel="stylesheet">
+      <link href="./bootstrap-3.3.5/css/custom.css" rel="stylesheet">
 
       <link rel="shortcut icon" href="./bootstrap-3.3.5/img/favicon.ico">
       <link rel="apple-touch-icon" href="./bootstrap-3.3.5/img/apple-icon-180x180.png">
       <link rel="apple-touch-icon" sizes="72x72" href="./bootstrap-3.3.5/img/apple-icon-72x72.png">
       <link rel="apple-touch-icon" sizes="120x120" href="./bootstrap-3.3.5/img/apple-icon-120x120.png">
 
-      <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-      <meta http-equiv="Pragma" content="no-cache" />
-      <meta http-equiv="Expires" content="0" />
-
-      <style id="bsCss">
-        body {background-color: #474d7b;}
-        main {padding:0px;}
-        a.hfooter {color: yellow;}
-        footer.all {
-          height:50px;
-          border-top:solid 1px #666;
-          bottom:0;
-          padding:5px;
-          position:fixed;
-          width:100%;
-          background-color: black;
-          z-index:1000;}
-      </style>
-
-      <script id="bsJs">
-         /* YOUR JS CODE HERE*/
-      </script>
+      
+      
     </head>
     <body>
-      <header>
-        <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header"><a class="navbar-brand" href="#"><strong>History of the World</strong></a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#"><strong>Browse</strong><span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Add</a></li>
-                <li><a href="#">Map</a></li>
-                <li><a href="#">Chart</a></li>
-                <li><a href="#">Learn</a></li>
-                <li><a href="#">Change</a></li>
-                <li><a href="#">Seek</a></li>
-              </ul>
-              </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-          </nav>
-      </header>
-      <main>
-        <div id="wrapper">
-
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#">
-                        Start Bootstrap
-                    </a>
-                </li>
-                <li>
-                    <a href="#">Dashboard</a>
-                </li>
-                <li>
-                    <a href="#">Shortcuts</a>
-                </li>
-                <li>
-                    <a href="#">Overview</a>
-                </li>
-                <li>
-                    <a href="#">Events</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /#sidebar-wrapper -->
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1>Simple Sidebar</h1>
-                        <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-                        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+        <div id="bContainer" class="container-fluid"><!-- fluid container for entire body -->
+            <div id="navRow" class="row">
+                <div id="navCols"class="col-md-12">>
+                    <nav class="navbar navbar-fixed-top">
+                        <div class="navbar-header"><a class="navbar-brand" href="#"><strong>History of the World</strong></a></div>
+                        <div id="navMenu">
+                          <ul class="nav navbar-nav">
+                            <li class="active"><a href="#"><strong>Browse</strong><span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">Add</a></li>
+                            <li><a href="#">Map</a></li>
+                            <li><a href="#">Chart</a></li>
+                            <li><a href="#">Learn</a></li>
+                            <li><a href="#">Change</a></li>
+                            <li><a href="#">Seek</a></li>
+                          </ul>
+                        </div><!-- end navMenu -->
+                    </nav>
+                </div><!-- end navCols -->
+        </div><!-- end navRow -->
+            <div id="bRow" class="row">
+                <div class="col-md-3">
+                    <div id="pFilters" class="panel panel-default">
+                        <div class="panel-heading">Filters</div>
+                        <div class="panel-body">Panel Content</div>
+                        <div class="panel-footer"><button id="updateFilter" class="btn">Update Filter</button></div>
                     </div>
                 </div>
-            </div>
-        </div><!-- /#page-content-wrapper -->
-    </div><!-- /#wrapper -->
-      </main>
-      <footer class="all">
-        <address><a class="hfooter" href="mailto:webmaster@clmitchell.net">Contact</a></address>
-      </footer>
-
+                <div id="tCols" class="col-md-8">
+                    <div id="pTEvents" class="panel panel-default">
+                        <div class="panel-heading">Events</div>
+                        <div id="pBody" class="panel-body table-responsive">
+                            <table class="table table-fixed table-striped table-bordered">
+                                <thead><th class="col-xs-2">#</th><th class="col-xs-8">Name</th><th class="col-xs-2">Points</th></thead>
+                                <tbody>
+                                  <tr>
+              <td class="col-xs-2">1</td><td class="col-xs-8">Mike Adams</td><td class="col-xs-2">23</td>
+            </tr>
+            <tr>
+              <td class="col-xs-2">2</td><td class="col-xs-8">Holly Galivan</td><td class="col-xs-2">44</td>
+            </tr>
+            <tr>
+              <td class="col-xs-2">3</td><td class="col-xs-8">Mary Shea</td><td class="col-xs-2">86</td>
+            </tr>
+            <tr>
+              <td class="col-xs-2">4</td><td class="col-xs-8">Jim Adams</td><td>23</td>
+            </tr>
+            <tr>
+              <td class="col-xs-2">5</td><td class="col-xs-8">Henry Galivan</td><td class="col-xs-2">44</td>
+            </tr>
+            <tr>
+              <td class="col-xs-2">6</td><td class="col-xs-8">Bob Shea</td><td class="col-xs-2">26</td>
+            </tr>
+            <tr>
+              <td class="col-xs-2">7</td><td class="col-xs-8">Andy Parks</td><td class="col-xs-2">56</td>
+            </tr>
+            <tr>
+              <td class="col-xs-2">8</td><td class="col-xs-8">Bob Skelly</td><td class="col-xs-2">96</td>
+            </tr>
+            <tr>
+              <td class="col-xs-2">9</td><td class="col-xs-8">William Defoe</td><td class="col-xs-2">13</td>
+            </tr>
+            <tr>
+              <td class="col-xs-2">10</td><td class="col-xs-8">Will Tripp</td><td class="col-xs-2">16</td>
+            </tr>
+            <tr>
+              <td class="col-xs-2">11</td><td class="col-xs-8">Bill Champion</td><td class="col-xs-2">44</td>
+            </tr>
+            <tr>
+              <td class="col-xs-2">12</td><td class="col-xs-8">Lastly Jane</td><td class="col-xs-2">6</td>
+            </tr>      
+                                 </tbody>
+                            </table>
+                        </div><!-- end pBody -->
+                    </div><!-- end pTEvents -->
+                </div><!-- end tCols -->
+            </div><!-- end bRow -->
+        <div id="footerRow" class="row">
+            <div id="footCols" class="col-md-12"><address><a class="hfooter" href="mailto:webmaster@clmitchell.net">Contact</a></address></div>
+        </div><!-- end footerRow -->
+    </div><!-- end bContainer -->
 
       <script src="./bootstrap-3.3.5/js/jquery-1.11.3.min.js"></script>
       <script src="./bootstrap-3.3.5/js/bootstrap.min.js"></script>
       <script src="./jstree-1.0.1/jstree.min.js"></script>
-      <!-- Menu Toggle Script -->
-      <script>
-        $("#menu-toggle").click(function(e) {
-          e.preventDefault();
-          $("#wrapper").toggleClass("toggled");
-        });
+      
+      <script id="bsJs">
+         /* YOUR JS CODE HERE*/
       </script>
     </body>
 </html>
