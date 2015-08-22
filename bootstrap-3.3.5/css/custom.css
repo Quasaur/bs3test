@@ -11,6 +11,16 @@ div#navRow {
     background-color: white;
 }
 
+div#bRow {
+    margin: 20px;
+}
+
+div#tEvents {
+    background-color: lightgrey;
+}
+
+
+
 div#pFilters {
     /* width: 300px; */
     /* position: relative; */
